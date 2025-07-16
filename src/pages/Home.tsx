@@ -26,7 +26,6 @@ export const Home = () => {
     queryFn: () => fetchCharacter(page, debouncedSearch),
   });
 
-  // Фильтрация результатов мемоизирована для оптимизации рендера
   const filteredResults = useMemo(() => {
     if (!data) return [];
     if (genderFilter === "all") return data.results;
