@@ -2,6 +2,10 @@
 
 demo: https://starwars-catalogs.vercel.app/
 
+npm install
+npm run dev
+npm run build
+
 Технологии: 
 - React
 - Typescript
