@@ -43,7 +43,7 @@ export const Home = () => {
   if (isError || !data) {
     return <div className="text-center text-red-600">Error fetching data</div>;
   }
-
+  console.log(data)
   return (
     <div className="container mx-auto p-4 min-h-screen flex flex-col gap-4">
       <div className="flex items-center gap-4">
@@ -67,7 +67,7 @@ export const Home = () => {
         </div>
       )}
 
-      <CardsPagination page={page} setPage={setPage} data={data} />
+      <CardsPagination page={page} setPage={setPage} />
     </div>
   );
 };

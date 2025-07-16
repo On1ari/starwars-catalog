@@ -3,7 +3,7 @@ import type { Character, CharacterResponse } from "@/types/types";
 const BASE_URL = 'https://www.swapi.tech/api/people';
 const LIMIT = 12;
 
-const parseCharacter = (data): Character => ({
+const parseCharacter = (data: any): Character => ({
   ...data.properties,
   uid: data.uid,
   url: data.url,
